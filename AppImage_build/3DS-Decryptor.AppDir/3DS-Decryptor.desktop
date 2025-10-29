@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=3DS/CIA Decryptor
+Comment=Modern GUI for decrypting 3DS and CIA files
+Exec=3ds-decryptor
+Icon=3ds-decryptor
+Terminal=false
+Categories=Game;Utility;
+Keywords=3ds;cia;decrypt;emulator;nintendo;

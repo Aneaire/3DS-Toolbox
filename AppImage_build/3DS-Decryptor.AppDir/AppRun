@@ -1,0 +1,25 @@
+#!/bin/bash
+HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+export PATH="${HERE}/usr/bin:${PATH}"
+export LD_LIBRARY_PATH="${HERE}/usr/lib:${LD_LIBRARY_PATH}"
+
+# Check dependencies
+if ! command -v wine &> /dev/null; then
+    echo "❌ Wine is not installed. Please install it:"
+    echo "   Ubuntu/Debian: sudo apt install wine"
+    echo "   Arch: sudo pacman -S wine"
+    echo "   Fedora: sudo dnf install wine"
+    exit 1
+fi
+
+if ! python3 -c "import tkinter" &> /dev/null; then
+    echo "❌ Python3 with tkinter is not installed. Please install it:"
+    echo "   Ubuntu/Debian: sudo apt install python3-tk"
+    echo "   Arch: sudo pacman -S tk"
+    echo "   Fedora: sudo dnf install python3-tkinter"
+    exit 1
+fi
+
+# Launch the GUI
+cd "${HERE}/usr/bin"
+exec python3 decrypt_gui.py "$@"
