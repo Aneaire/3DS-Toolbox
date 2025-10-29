@@ -1,41 +1,58 @@
-# Configuration files (user-specific)
-.gui_config
-gui_config.json
-
-# Log files (generated during runtime)
-log.txt
-*.log
-
-# Temporary files from decryption process
-*.ncch
-content.txt
-*-decfirst.cia
-
-# Decrypted output files (user's game files)
-*-decrypted.*
-*-decrypted.*
+# Build artifacts
+build/
+dist/
+*.AppDir/
+*.AppImage
+*.exe
+*.zip
+*.tar.gz
 
 # Python cache
 __pycache__/
 *.pyc
 *.pyo
+*.pyd
+.Python
 
-# PyInstaller build files
-build/
-dist/
-*.spec
-*.exe
+# Virtual environments
+venv/
+env/
+.venv/
+.env/
 
-# OS-specific files
+# Configuration and user data
+gui_config.json
+.gui_config
+log.txt
+*.log
+
+# Temporary files
+*.ncch
+content.txt
+*-decfirst.cia
+*-decrypted.*
+*-decrypted.cci
+
+# OS-specific
 .DS_Store
 Thumbs.db
+desktop.ini
 
-# Editor backup files
+# Editor files
 *~
 *.bak
 *.tmp
+*.swp
+.vscode/
+.idea/
 
-# Large binary executables (optional - uncomment if you want to exclude them)
-# Note: Keeping these in repo makes the project work out-of-the-box
-# If excluded, users would need to download them separately
-# *.exe
+# Build tools
+appimagetool-*.AppImage
+runtime-*
+
+# Dependencies (if using submodules)
+node_modules/
+
+# Package files (keep in releases/)
+# 3DS-Decryptor-*.AppImage
+# 3DS_Decryptor_Windows*.zip
