@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=3DS Decryptor
+Comment=GUI for decrypting 3DS and CIA files
+Exec=python3 "/home/aneaire/Desktop/Games/3DS/Batch CIA 3DS Decryptor/decrypt_gui.py"
+Icon=applications-system
+Terminal=false
+Categories=Game;Utility;
