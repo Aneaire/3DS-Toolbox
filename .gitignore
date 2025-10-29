@@ -1,5 +1,6 @@
 # Configuration files (user-specific)
 .gui_config
+gui_config.json
 
 # Log files (generated during runtime)
 log.txt
@@ -18,6 +19,12 @@ content.txt
 __pycache__/
 *.pyc
 *.pyo
+
+# PyInstaller build files
+build/
+dist/
+*.spec
+*.exe
 
 # OS-specific files
 .DS_Store
