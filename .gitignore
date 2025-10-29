@@ -1,0 +1,34 @@
+# Configuration files (user-specific)
+.gui_config
+
+# Log files (generated during runtime)
+log.txt
+*.log
+
+# Temporary files from decryption process
+*.ncch
+content.txt
+*-decfirst.cia
+
+# Decrypted output files (user's game files)
+*-decrypted.*
+*-decrypted.*
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Editor backup files
+*~
+*.bak
+*.tmp
+
+# Large binary executables (optional - uncomment if you want to exclude them)
+# Note: Keeping these in repo makes the project work out-of-the-box
+# If excluded, users would need to download them separately
+# *.exe
